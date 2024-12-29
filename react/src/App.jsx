@@ -16,7 +16,7 @@ const App = () => {
     <Profiler id="App" onRender={handleRender}>
     <div>
       {/* Menú de navegación (Header) */}
-      <Header />
+       <Header />
 
       {/* Área donde se cargará el contenido de las rutas */}
       <main>

@@ -26,6 +26,5 @@ return (
     </div>
 );
 };
-
 // Envolvemos DoctorCard con el HOC
 export default withDoctorDetails(DoctorCard);

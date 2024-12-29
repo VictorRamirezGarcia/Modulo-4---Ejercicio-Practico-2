@@ -1,21 +1,3 @@
-// import React, { useState, useEffect, Profiler} from 'react';
-// import ServiceList from '@/components/ServiceList';
-
-// export default function Home() {
-
-//   const [services, setServices] = useState([]);
-
-//   useEffect(() => {
-//     setServices(['Consulta general', 'Cirugía', 'Pediatría', 'Cardiología']);
-//   }, []);
-
-//   return (
-//     <div className="content">
-//     <ServiceList services={services} />
-//     </div>
-//   )
-// }
-
 // src/views/home.jsx
 import React, { useState, useEffect } from 'react';
 import ServiceList from '@/components/ServiceList';  // El componente que muestra la lista de servicios

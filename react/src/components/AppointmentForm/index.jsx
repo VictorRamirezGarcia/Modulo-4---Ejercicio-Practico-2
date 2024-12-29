@@ -33,7 +33,7 @@ function AppointmentForm({ doctors }) {
           type="text"
           value={patientName}
           onChange={(e) => setPatientName(e.target.value)}
-          ref={patientNameInputRef} // Asignar la referencia al campo de entrada
+          ref={patientNameInputRef} 
         />
       </label>
       <br />
@@ -67,7 +67,14 @@ function AppointmentForm({ doctors }) {
 }
 
 AppointmentForm.propTypes = {
-  doctors: PropTypes.array.isRequired,
+  doctors: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired, 
+      specialty: PropTypes.string,        
+      yearsOfExperience: PropTypes.number
+    })
+  ).isRequired,
 };
+
 
 export default AppointmentForm;
